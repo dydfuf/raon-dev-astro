@@ -5,22 +5,14 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Raon Dev',
+			description: '프론트엔드 개발자 Raon의 개발 블로그입니다. 주로 Front-end 관련 글을 작성합니다.',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/dydfuf/raon-dev-astro',
+				youtube: 'https://www.youtube.com/channel/UC_9Nh2Xrh6C9u2e_zlIdEYA',
+				linkedin: 'https://www.linkedin.com/in/%EC%B5%9C%EC%9A%A9%EC%97%B4/'
 			},
 			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', link: '/guides/example/' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
 				{
 					label: 'Posts',
 					autogenerate: { directory: 'posts' },
